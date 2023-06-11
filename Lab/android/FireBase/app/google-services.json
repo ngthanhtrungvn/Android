@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "891264001531",
+    "firebase_url": "https://testadnroid-9146b-default-rtdb.firebaseio.com",
+    "project_id": "testadnroid-9146b",
+    "storage_bucket": "testadnroid-9146b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891264001531:android:67daeb7873468c962bd75e",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891264001531-h00n8dht2gno324msid2qvuh2ir2ljum.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebase",
+            "certificate_hash": "2a86c7928aa3e0afa1c169d5abb936aedb8df54f"
+          }
+        },
+        {
+          "client_id": "891264001531-nettpi64vk6fcm11p9toq76970ql1ffb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdqa0WPfvyncKBt7iTybG9aSEzcuvABto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891264001531-nettpi64vk6fcm11p9toq76970ql1ffb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

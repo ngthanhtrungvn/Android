@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/imageContact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/f_logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageContact"
+        android:text="Dương Đông Duy"
+        android:id="@+id/nameContact"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageContact"
+        android:layout_below="@id/nameContact"
+        android:id="@+id/phoneContact"
+        android:text="0376880903"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

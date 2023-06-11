@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@mipmap/ic_noithat_foreground"
+    >
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_left"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_right"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.constraintlayout.widget.Guideline>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME TO"
+        app:layout_constraintLeft_toLeftOf="@id/line_left"
+        app:layout_constraintRight_toRightOf="@id/line_right"
+        android:textSize="30dp"
+        android:textColor="#e23c3c"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FURNITURE"
+        android:textStyle="bold"
+        android:textSize="32dp"
+        app:layout_constraintLeft_toLeftOf="@id/line_left"
+        app:layout_constraintRight_toRightOf="@id/line_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:textColor="#e23c3c">
+
+    </TextView>
+
+    <EditText
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/edt_username"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Username"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintVertical_bias=".4"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/line_left"
+        app:layout_constraintRight_toRightOf="@id/line_right"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/baseline_perm_contact_calendar_24"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="#e23c3c"
+        android:drawableTint="#e23c3c"
+        app:layout_constraintBottom_toTopOf="@+id/edt_password">
+    </EditText>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="@id/line_left"
+        app:layout_constraintRight_toRightOf="@id/line_right"
+        app:layout_constraintTop_toBottomOf="@id/edt_username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        android:drawablePadding="10dp"
+        android:textColorHint="#e23c3c"
+        android:drawableTint="#e23c3c"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/baseline_key_24"
+        android:hint="Password"
+        >
+    </EditText>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:backgroundTint="#e23c3c"
+        app:layout_constraintLeft_toLeftOf="@id/line_left"
+        app:layout_constraintRight_toRightOf="@id/line_right"
+        app:layout_constraintTop_toBottomOf="@id/edt_password"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toRightOf="@id/line_left"
+        app:layout_constraintRight_toLeftOf="@+id/btn_google"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        android:text="Facebook"
+        android:textColor="@color/white"
+        android:backgroundTint="#3a559f"
+        android:paddingLeft="-4dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        app:layout_constraintWidth_percent=".37"
+        android:textSize="11dp"
+        android:drawableLeft="@drawable/icons8_facebook"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintLeft_toRightOf="@id/btn_facebook"
+        app:layout_constraintRight_toLeftOf="@id/line_right"
+        app:layout_constraintWidth_percent="0.37"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/icons8_google"
+        android:text="Google"
+        android:paddingLeft="-4dp"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp"
+        android:backgroundTint="#e23c3c">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="@+id/line_left"
+        app:layout_constraintRight_toRightOf="@id/line_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="#e23c3c"
+        android:textColor="@color/white"
+        android:text="Register">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

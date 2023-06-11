@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimationActivity">
+
+    <ImageView
+        android:id="@+id/imageAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/diningroom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageAnimation"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnFadein"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fadein" />
+        <Button
+            android:id="@+id/btnFadeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fadeout" />
+        <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rotate" />
+        <Button
+            android:id="@+id/btnMove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Move" />
+        <Button
+            android:id="@+id/btnZoomin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zoom in" />
+        <Button
+            android:id="@+id/btnFadeinRotate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fadein + Rotate" />
+    </LinearLayout>
+
+
+</RelativeLayout>

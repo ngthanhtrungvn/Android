@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ứng dụng của tao</string>
+    <string name="tieude">Nội thất</string>
+    <string name="us">Tên đăng nhập</string>
+    <string name="pw">Mật khẩu</string>
+    <string name="lg">Đăng nhập</string>
+    <string name="rs">Đăng ký</string>
+    <string name="tieude1">Chào mừng tới</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <TextView android:textSize="20sp" android:layout_span="5"
+            android:background="#Ff0"
+            android:text="Dòng cột"
+            android:gravity="center"
+
+            />
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+    </TableRow>
+    <TableRow>
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+        <TextView android:textSize="20sp"
+            android:text="Dòng cột" />
+    </TableRow>
+
+</TableLayout>

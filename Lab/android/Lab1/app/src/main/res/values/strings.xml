@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab1</string>
+    <string name="tieude">Furniture</string>
+    <string name="us">Username</string>
+    <string name="pw">Password</string>
+    <string name="lg">Login</string>
+    <string name="rs">Register</string>
+    <string name="tieude1">Wellcom to</string>
+</resources>

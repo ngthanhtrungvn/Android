@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/argentina"
+    android:id="@+id/flag"
+    android:layout_marginLeft="10dp"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/flag"
+        android:textSize="20dp"
+        android:text="Tên nước"
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:id="@+id/txtName"
+        />
+    <TextView
+        android:id="@+id/txt_text_population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/flag"
+        android:text="Population:"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/txtPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24.000.000"
+        android:layout_toRightOf="@id/txt_text_population"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="5dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e23c3c"
+    tools:context=".Activity.InfoActivity">
+
+    <EditText
+        android:id="@+id/info"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="100dp"
+        android:text="vudinhai"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#e23c3c">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_below="@id/info"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:hint="Email"
+        android:textColorHint="#e23c3c"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#e23c3c">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_below="@id/email"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:hint="Username"
+        android:textColorHint="#e23c3c"
+        android:drawableLeft="@drawable/baseline_perm_contact_calendar_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#e23c3c">
+
+    </EditText>
+
+    <EditText
+
+        android:id="@+id/password"
+        android:layout_below="@id/username"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:textColorHint="#e23c3c"
+        android:drawableLeft="@drawable/baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:drawableTint="#e23c3c">
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_below="@id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioGroup
+            android:background="@color/white"
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="100dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#e23c3c"
+                android:buttonTint="#e23c3c"
+                android:text="Male">
+
+            </RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#e23c3c"
+                android:buttonTint="#e23c3c"
+                android:text="Female">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
