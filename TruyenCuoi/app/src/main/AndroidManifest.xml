@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission
+        android:name="com.example.TruyenCuoi.WRITE_DATABASE"
+        android:label="Write Database"
+        android:protectionLevel="normal" />
+
+    <permission
+        android:name="com.example.TruyenCuoi.READ_DATABASE"
+        android:label="Read Database"
+        android:protectionLevel="normal" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TruyenCuoi"
+        tools:targetApi="31">
+
+        <provider
+            android:authorities="com.example.TruyenCuoi.ContentProdvider.CDProdvider"
+            android:name=".ContentProdvider.CDProdvider"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="com.example.TruyenCuoi.READ_DATABASE"
+            android:writePermission="com.example.TruyenCuoi.WRITE_DATABASE">
+
+        </provider>
+
+
+        <activity
+            android:name=".DanhsachTC"
+            android:exported="false"
+            android:theme="@style/Theme.TruyenCuoi.NoActionBar" />
+        <activity
+            android:name=".DanhsachCD"
+            android:exported="false"
+            android:theme="@style/Theme.TruyenCuoi.NoActionBar" />
+        <activity
+            android:name=".ThemTC"
+            android:exported="false"
+            android:theme="@style/Theme.TruyenCuoi.NoActionBar" />
+        <activity
+            android:name=".ThemCD"
+            android:exported="false"
+            android:theme="@style/Theme.TruyenCuoi.NoActionBar" />
+        <activity android:name=".EditCD"
+            android:exported="false"
+            android:theme="@style/Theme.TruyenCuoi.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

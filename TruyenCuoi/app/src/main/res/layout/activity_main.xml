@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btnTCD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/gray"
+            android:onClick="onClick"
+            android:text="Thêm chủ đề" />
+
+        <Button
+            android:id="@+id/btnTTC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/gray"
+
+            android:text="Thêm truyện cười" />
+
+        <Button
+            android:id="@+id/btnDSCD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+
+            android:backgroundTint="@color/gray"
+            android:onClick="onClick"
+            android:text="Danh sách chủ đề" />
+
+        <Button
+            android:id="@+id/btnDSTC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/gray"
+
+            android:text="Danh sách truyện cười" />
+
+    </LinearLayout>
+</layout>
